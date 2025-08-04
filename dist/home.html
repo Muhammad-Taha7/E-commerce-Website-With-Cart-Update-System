@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en"  class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taha's Store</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="/src/input.css">
+    <script src="script.js" defer></script>
+    <!-- In your <head> tag -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+<!-- Flowbite CSS (optional, if needed separately) -->
+<link href="https://unpkg.com/flowbite@2.2.1/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body class="bg-black">
+    <div class="base min-h-screen w-full text-white font-poppins">
+       <!-- ✅ NAVBAR -->
+ <nav class="fixed top-0 left-0 w-full z-50 bg-black flex justify-between px-5 py-5 md:justify-around items-center shadow-md">
+
+    <!-- Logo -->
+    <div class="logo">
+      <h2 class="text-[1.3rem] md:text-[1.6rem] font-bold border rounded-lg cursor-pointer p-3 flex items-center gap-2">
+        Taha's <span class="text-yellow-300">Store</span>
+      </h2>
+    </div>
+
+    <!-- Nav Links (desktop) -->
+    <div class="links hidden md:flex text-[1.1rem] items-center md:gap-7 lg:gap-12">
+      <a href="#" class="relative group">Home
+        <span class="absolute left-0 bottom-0 h-[2px] w-0 bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#product" class="relative group">Collection
+        <span class="absolute left-0 bottom-0 h-[2px] w-0 bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#about" class="relative group">About
+        <span class="absolute left-0 bottom-0 h-[2px] w-0 bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#contact" class="relative group">Contact
+        <span class="absolute left-0 bottom-0 h-[2px] w-0 bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+    </div>
+
+    <!-- Icons -->
+    <div class="icons flex items-center gap-4">
+      <!-- Cart -->
+      <div id="cartBtn" class="relative p-3 md:p-4 flex items-center cursor-pointer justify-center rounded-full border-2 hover:text-yellow-300 transition">
+        <i class="fa-solid fa-cart-shopping text-[1rem] md:text-[1.3rem]"></i>
+        <span class="absolute -top-1 -right-1 bg-yellow-300 text-black text-xs font-bold h-5 w-5 flex items-center justify-center rounded-full">0</span>
+      </div>
+      <!-- Hamburger -->
+      <div id="hamburgerBtn" class="block md:hidden cursor-pointer text-[1.2rem] font-medium">
+        <i class="fa-solid fa-bars "></i>
+      </div>
+    </div>
+  </nav>
+     <!-- Hero section -->
+    <div class="hero-section p-3 md:p-0  w-[100%] mt-[7rem] md:mt-[6rem] lg:mt-[7rem] ">
+        
+
+<div id="default-carousel" class="relative w-full" data-carousel="slide">
+  <!-- Carousel wrapper -->
+  <div class="relative h-[12rem] md:h-[20rem] lg:h-[40rem] overflow-hidden rounded-lg">
+    <!-- Item 1 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <img src="https://img.lazcdn.com/us/domino/718880ae-070b-4035-9683-b2c75bd4d018_PK-1976-688.jpg_2200x2200q80.jpg_.webp" class="absolute block w-full object-center h-full object-cover" alt="...">
+    </div>
+    <!-- Item 2 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <img src="https://img.lazcdn.com/us/domino/89fadf82-9da1-4941-95bb-87f2d398861b_PK-1976-688.jpg_2200x2200q80.jpg_.webp" class="absolute block w-full object-center h-full object-cover" alt="...">
+    </div>
+    <!-- Item 3 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <img src="https://img.lazcdn.com/us/domino/955e59a3-b7a1-4fde-85f6-4d6fe0be1034_PK-1976-688.jpg_2200x2200q80.jpg_.webp" class="absolute block w-full object-center h-full object-cover" alt="...">
+    </div>
+     <!-- Item 4 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <img src="https://img.lazcdn.com/us/domino/1db3656a-27e4-4eed-b0bd-a7edeabdf84a_PK-1976-688.jpg_2200x2200q80.jpg_.webp" class="absolute block w-full object-center h-full object-cover" alt="...">
+    </div>
+     <!-- Item 5 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <img src="https://img.lazcdn.com/us/domino/093f4b33-ef17-4bd9-94fa-fe722751a566_PK-1976-688.jpg_2200x2200q80.jpg_.webp" class="absolute block w-full object-center h-full object-cover" alt="...">
+    </div>
+     <!-- Item 6 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <img src="https://img.lazcdn.com/us/domino/ef4d8b15-0802-4090-8ab3-b058087adce1_PK-1976-688.jpg_2200x2200q80.jpg_.webp" class="absolute block w-full object-center h-full object-cover" alt="...">
+    </div>
+     <!-- Item 7 -->
+    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+      <img src="https://img.lazcdn.com/us/domino/9a619a44-c8ca-45a9-8748-e7e3d62c5704_PK-1976-688.jpg_2200x2200q80.jpg_.webp" class="absolute block w-full object-center h-full object-cover" alt="...">
+    </div>
+  </div>
+
+  <!-- Slider controls -->
+  <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/30 group-hover:bg-black/50">
+      <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+      </svg>
+    </span>
+  </button>
+  <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/30 group-hover:bg-black/50">
+      <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+      </svg>
+    </span>
+  </button>
+</div>
+
+    </div>
+<!-- Products Section -->
+<div id="product" class="product-section w-full md:p-20">
+  <div class="text-product p-5 md:p-10 lg:p-20">
+    <h2 class="text-[1.8rem] font-medium">
+      Our Product <span class="text-yellow-300">Section</span>
+    </h2>
+  </div>
+
+  <!-- Cards Grid -->
+  <div class="cards mt-[1rem] md:mt-[2rem] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 sm:px-10 lg:px-20">
+    
+    <!-- CARD TEMPLATE (Repeat 7 times) -->
+    <!-- CARD 1 -->
+    <div class="card1 h-[35rem] w-full max-w-[25rem] border p-5 mx-auto">
+      <div class="img h-[17rem] w-full">
+        <img class="h-full w-full object-contain" src="https://cf-images.dustin.eu/cdn-cgi/image/fit=contain,format=auto,quality=75,width=828,fit=contain/image/d2000010011288170/microsoft-surface-laptop-7-copilot-pc-core-ultra-7-16gb-512gb-138.png" alt="">
+      </div>
+      <div class="price text-[1.5rem] p-5 flex justify-between items-center">
+        <span class="font-medium">Price:</span>
+        <span class="text-yellow-300">20000 R.S</span>
+      </div>
+      <div class="description px-4">
+        <p class="text-[1rem]">Explore our latest laptops — fast, reliable, and perfect for work, study, or entertainment.</p>
+      </div>
+      <div class="btn p-5 rounded-lg mt-auto">
+        <button class="bg-yellow-300 hover:bg-yellow-500 duration-300 font-medium text-black p-3 w-full">Add to cart</button>
+      </div>
+    </div>
+
+    <!-- Repeat this card total 7 times -->
+    <!-- CARD 2 -->
+    <div class="card1 h-[35rem] w-full max-w-[25rem] border p-5 mx-auto">
+      <div class="img h-[17rem] w-full">
+        <img class="h-full w-full object-contain" src="https://www.skygames.com.pk/wp-content/uploads/2023/11/xbox-series-s-1tb-digital-edition-carbon-black.png" alt="">
+      </div>
+      <div class="price text-[1.5rem] p-5 flex justify-between items-center">
+        <span class="font-medium">Price:</span>
+        <span class="text-yellow-300">45000 R.S</span>
+      </div>
+      <div class="description px-4">
+        <p class="text-[1rem]">Experience next-gen gaming with Xbox — powerful performance, ultra-fast load times, and stunning 4K visuals.</p>
+      </div>
+      <div class="btn p-5 rounded-lg mt-auto">
+        <button class="bg-yellow-300 hover:bg-yellow-500 duration-300 font-medium text-black p-3 w-full">Add to cart</button>
+      </div>
+    </div>
+    <!-- CARD 3 -->
+     <div class="card1 h-[35rem] w-full max-w-[25rem] border p-5 mx-auto">
+      <div class="img h-[17rem] w-full">
+        <img class="h-full w-full object-contain" src="https://m.media-amazon.com/images/I/61w-c+gPkrL.jpg" alt="">
+      </div>
+      <div class="price text-[1.5rem] p-5 flex justify-between items-center">
+        <span class="font-medium">Price:</span>
+        <span class="text-yellow-300">1500 R.S</span>
+      </div>
+      <div class="description px-4">
+        <p class="text-[1rem]">A gaming mouse offers high precision, fast response time, and customizable buttons for competitive gameplay.
+        </p>
+      </div>
+      <div class="btn p-5 rounded-lg mt-auto">
+        <button class="bg-yellow-300 hover:bg-yellow-500 duration-300 font-medium text-black p-3 w-full">Add to cart</button>
+      </div>
+    </div>
+    <!-- CARD 4 -->
+     <div class="card1 h-[35rem] w-full max-w-[25rem] border p-4 mx-auto">
+      <div class="img h-[17rem] w-full">
+        <img class="h-full w-full object-contain" src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z2FtaW5nJTIwa2V5Ym9hcmR8ZW58MHx8MHx8fDA%3D" alt="">
+      </div>
+      <div class="price text-[1.5rem] p-5 flex justify-between items-center">
+        <span class="font-medium">Price:</span>
+        <span class="text-yellow-300">1999 R.S</span>
+      </div>
+      <div class="description px-4">
+        <p class="text-[1rem]">A gaming keyboard features fast response keys, RGB lighting, and durable build for immersive and competitive gaming.
+        </p>
+      </div>
+      <div class="btn p-5 rounded-lg mt-auto">
+        <button class="bg-yellow-300 hover:bg-yellow-500 duration-300 font-medium text-black p-3 w-full">Add to cart</button>
+      </div>
+    </div>
+    <!-- CARD 5 -->
+    <div class="card1 h-[35rem] w-full max-w-[25rem] border p-4 mx-auto">
+      <div class="img h-[17rem] w-full">
+        <img class="h-full w-full object-contain" src="https://www.91-cdn.com/hub/wp-content/uploads/2023/11/ASUS-ROG-Phone-8-Pro.png" alt="">
+      </div>
+      <div class="price text-[1.5rem] p-5 flex justify-between items-center">
+        <span class="font-medium">Price:</span>
+        <span class="text-yellow-300">1999 R.S</span>
+      </div>
+      <div class="description px-4">
+        <p class="text-[1rem]">A powerful smartphone with smooth performance, vibrant display, and long-lasting battery for everyday use.
+        </p>
+      </div>
+      <div class="btn p-5 rounded-lg mt-auto">
+        <button class="bg-yellow-300 hover:bg-yellow-500 duration-300 font-medium text-black p-3 w-full">Add to cart</button>
+      </div>
+    </div>
+    <!-- CARD 6 -->
+    <div class="card1 h-[35rem] w-full max-w-[25rem] border p-4 mx-auto">
+      <div class="img h-[17rem] w-full">
+        <img class="h-full w-full object-contain" src="https://digimigia.com/wp-content/uploads/2023/11/redragon-speakers.jpg" alt="">
+      </div>
+      <div class="price text-[1.5rem] p-5 flex justify-between items-center">
+        <span class="font-medium">Price:</span>
+        <span class="text-yellow-300">1999 R.S</span>
+      </div>
+      <div class="description px-4">
+        <p class="text-[1rem]">Enjoy loud, clear sound with deep bass — perfect for parties, home use, or outdoor fun.
+        </p>
+      </div>
+      <div class="btn p-5 rounded-lg mt-auto">
+        <button class="bg-yellow-300 hover:bg-yellow-500 duration-300 font-medium text-black p-3 w-full">Add to cart</button>
+      </div>
+    </div>
+    <!-- CARD 7 -->
+   <div class="card1 h-[35rem] w-full max-w-[25rem] border p-4 mx-auto">
+      <div class="img h-[17rem] w-full">
+        <img class="h-full w-full object-contain" src="https://cdn.shopify.com/s/files/1/0666/2104/7084/files/G-200_Gaming_Earbuds_mobile_1.jpg?v=1716641171" alt="">
+      </div>
+      <div class="price text-[1.5rem] p-5 flex justify-between items-center">
+        <span class="font-medium">Price:</span>
+        <span class="text-yellow-300">1999 R.S</span>
+      </div>
+      <div class="description px-4">
+        <p class="text-[1rem]">Comfortable, high-quality headphones with immersive sound and noise isolation for focused listening.
+        </p>
+      </div>
+      <div class="btn p-5 rounded-lg mt-auto">
+        <button class="bg-yellow-300 hover:bg-yellow-500 duration-300 font-medium text-black p-3 w-full">Add to cart</button>
+      </div>
+    </div>
+     <!-- CARD 8 -->
+      <div class="card1 h-[35rem] w-full max-w-[25rem] border p-4 mx-auto">
+      <div class="img h-[17rem] w-full">
+        <img class="h-full w-full object-contain" src="https://cdn.shopify.com/s/files/1/0012/4957/4961/files/pink_head_phones_7.jpg?v=1649656119" alt="">
+      </div>
+      <div class="price text-[1.5rem] p-5 flex justify-between items-center">
+        <span class="font-medium">Price:</span>
+        <span class="text-yellow-300">1999 R.S</span>
+      </div>
+      <div class="description px-4">
+        <p class="text-[1rem]">Compact and wireless earbuds with clear audio, great fit, and long battery life — ideal for on-the-go music.
+        </p>
+      </div>
+      <div class="btn p-5 rounded-lg mt-auto">
+        <button class="bg-yellow-300 hover:bg-yellow-500 duration-300 font-medium text-black p-3 w-full">Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="review px-4 py-10 mt-[5rem]">
+  <h2 class="text-4xl font-bold text-center mb-12">
+    Reviews <span class="text-yellow-300">Section</span>
+  </h2>
+
+  <div class="reviews-section w-full flex flex-wrap  justify-center gap-8">
+
+    <!-- Review Card -->
+    <div class="card w-[380px] border shadow-2xl  p-7">
+      <div class="flex flex-col items-center text-center">
+        <img src="https://st2.depositphotos.com/13166358/42123/i/450/depositphotos_421230578-stock-photo-smiling-young-indian-lady-looking.jpg"
+             class="h-36 w-36 rounded-full object-cover mb-6" alt="Reviewer">
+
+        <p class="text-gray-500 text-base leading-relaxed">
+          "I absolutely loved the shopping experience on this store! Everything feels clean and smooth — from browsing products to adding items to the cart. The layout is user-friendly, and I especially liked the little message that pops up when you add something — it feels so personal and professional."
+        </p>
+        <p class="mt-6 font-semibold text-yellow-600 text-lg">🌸 — Ayesha, Lahore</p>
+      </div>
+    </div>
+
+    <!-- Review Card -->
+    <div class="card w-[380px] border shadow-2xl  p-7">
+      <div class="flex flex-col items-center text-center">
+        <img src="https://plus.unsplash.com/premium_photo-1682096259050-361e2989706d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8eW91bmclMjBtYW58ZW58MHx8MHx8fDA%3D"
+             class="h-36 w-36 rounded-full object-cover mb-6" alt="Reviewer">
+
+        <p class="text-gray-500 text-base leading-relaxed">
+         "This store really surprised me! It's fast, simple, and actually enjoyable to use. The Add to Cart feature works perfectly, and I liked how the cart updates instantly without needing to reload the page. Also, the little toast notification feels polished and professional. Honestly, it feels like a premium experience — great job!"
+        </p>
+        <p class="mt-6 font-semibold text-yellow-600 text-lg">🔥 — Ali, Karachi</p>
+      </div>
+    </div>
+
+    <!-- Review Card -->
+    <div class="card w-[380px] border shadow-2xl  p-7">
+      <div class="flex flex-col items-center text-center">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/057/706/477/small/a-young-man-in-a-suit-and-tie-standing-in-the-street-free-photo.jpg"
+             class="h-36 w-36 rounded-full object-cover mb-6" alt="Reviewer">
+
+        <p class="text-gray-500 text-base leading-relaxed">
+         "Great shopping platform! The interface is super clean, and I didn’t face any glitches while browsing or adding products. I really liked how smoothly everything works — from the product listing to the final total. The cart is well-built, and the 10% tax calculation makes everything transparent. Definitely coming back for more!"
+        </p>
+        <p class="mt-6 font-semibold text-yellow-600 text-lg">💼 — Bilal, Islamabad</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<!-- ✅ About Section (Larger on md+) -->
+<section id="about" class="about-section pt-[7rem] md:pt-[14rem] bg-black py-16 px-4 md:px-32">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-20">
+    
+    <!-- Image -->
+    <div class="w-full md:w-1/2">
+      <img src="https://st2.depositphotos.com/13166358/42123/i/450/depositphotos_421230578-stock-photo-smiling-young-indian-lady-looking.jpg" 
+           alt="About Image" 
+           class="w-full h-auto rounded-2xl shadow-2xl md:h-[420px]" />
+    </div>
+
+    <!-- Text Content -->
+    <div class="w-full md:w-1/2 md:text-left ">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white">
+        About <span class="text-yellow-400">Us</span>
+      </h2>
+      <p class="text-gray-400 text-lg md:text-xl leading-relaxed mb-4">
+        Welcome to our store — a place where passion meets quality. We’re more than just an online shop; we’re a team committed to delivering the best products with a smooth and enjoyable shopping experience.
+      </p>
+      <p class="text-gray-400 text-lg md:text-xl leading-relaxed mb-6">
+        Whether you're browsing or buying, every detail has been crafted with care — from the intuitive layout to fast cart updates and friendly support. Thank you for being part of our journey.
+      </p>
+      <a href="#products" class="inline-block bg-yellow-400 text-black font-semibold px-6 md:px-8 py-3 md:py-4 rounded-lg hover:bg-yellow-500 transition">
+        Explore Products
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- ✅ Contact Section - Full Black Inputs -->
+<section id="contact" class="contact-section bg-black py-24 px-4 md:px-20" id="contact">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-4xl md:text-5xl font-bold text-center text-white mb-14">
+      Contact <span class="text-yellow-400">Us</span>
+    </h2>
+
+    <form class="space-y-8 bg-black border border-gray-800 p-8 md:p-12 rounded-2xl shadow-[0_0_60px_-10px_rgba(255,255,0,0.2)]">
+      <!-- Name -->
+      <div>
+        <label class="block text-white text-lg font-medium mb-2">Name</label>
+        <input type="text" placeholder="Your name"
+          class="w-full px-5 py-3 rounded-lg bg-black text-white border border-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400 transition duration-200" />
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label class="block text-white text-lg font-medium mb-2">Email</label>
+        <input type="email" placeholder="Your email"
+          class="w-full px-5 py-3 rounded-lg bg-black text-white border border-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400 transition duration-200" />
+      </div>
+
+      <!-- Message -->
+      <div>
+        <label class="block text-white text-lg font-medium mb-2">Message</label>
+        <textarea rows="6" placeholder="Write your message..."
+          class="w-full px-5 py-3 rounded-lg bg-black text-white border border-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400 transition duration-200 resize-none"></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="text-center">
+        <button type="submit"
+          class="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-10 py-3 rounded-lg text-lg transition-all duration-300 shadow-md hover:shadow-lg">
+          Send Message
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+
+
+<!-- ✅ Footer Section -->
+<footer class="bg-black text-gray-400 py-6 px-4 text-center border-t border-gray-800">
+  <p class="">
+    &copy; 2025 <span class="text-yellow-400 font-semibold text-sm md:text-[2rem]">Taha's Store</span>. All rights reserved.
+  </p>
+</footer>
+
+
+
+
+  <!-- ✅ Left Slide Menu (Hamburger) -->
+  <div id="leftMenu" class="fixed top-0 left-[-100%] w-[80%] sm:w-[60%] h-full bg-black text-white z-50 p-6 transition-all duration-500 ease-in-out">
+    <div class="flex justify-between items-center mb-6">
+       <h2 class="text-[1.3rem] md:text-[1.6rem] font-bold border rounded-lg cursor-pointer p-3 flex items-center gap-2">
+        Taha's <span class="text-yellow-300">Store</span>
+      </h2>
+      <button onclick="toggleLeftMenu()" class="text-xl"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <nav class="flex flex-col p-3 gap-6 text-lg">
+      <a href="#" class="relative group w-fit">Home
+        <span class="absolute left-0 bottom-0 h-[2px] w-0 bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#product" class="relative group w-fit">Collection
+        <span class="absolute left-0 bottom-0 h-[2px] w-0 bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#about" class="relative group w-fit">About
+        <span class="absolute left-0 bottom-0 h-[2px] w-0 bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#contact" class="relative group w-fit">Contact
+        <span class="absolute left-0 bottom-0 h-[2px] w-0 bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>
+      </a>
+    </nav>
+  </div>
+
+  <!-- ✅ Right Slide Cart -->
+  <div id="rightCart" class="fixed top-0 right-[-100%] w-[80%] sm:w-[60%] md:w-[40%] lg:w-[30%] h-full bg-black text-white z-50 p-6 transition-all duration-500 ease-in-out">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-2xl font-bold">Your Cart</h2>
+      <button onclick="toggleRightCart()" class="text-xl"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="text-center text-gray-300">Your cart is currently empty.</div>
+  </div>
+    </div>
+       
+
+    <!-- Flowbite JS -->
+<script src="https://unpkg.com/flowbite@2.2.1/dist/flowbite.min.js"></script>
+</body>
+</html>
